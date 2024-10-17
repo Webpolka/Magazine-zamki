@@ -1,0 +1,24 @@
+<svg width="109.600098" height="88.000000" viewBox="0 0 109.6 88" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_7_8448_dd" x="0.000000" y="0.000000" width="54.933105" height="60.800049" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_7_8448_dd)">
+		<path id="G" d="M42.43 27.38L50.93 27.38L50.93 44.78C46.16 50.12 39.32 52.8 30.41 52.8C22.89 52.8 16.6 50.3 11.56 45.3C6.52 40.3 4 34.05 4 26.55C4 19.05 6.55 12.77 11.66 7.7C16.84 2.56 23.09 0 30.41 0C37.74 0 43.81 2.11 48.65 6.35L44.09 12.91C40.57 9.92 36.25 8.43 31.14 8.43C25.96 8.43 21.61 10.13 18.09 13.53C14.63 16.87 12.91 21.21 12.91 26.55C12.91 31.9 14.56 36.24 17.88 39.57C21.26 42.83 25.44 44.46 30.41 44.46C35.25 44.46 39.26 43.42 42.43 41.34L42.43 27.38Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="G" d="" fill="#000000" fill-opacity="0" fill-rule="evenodd"/>
+	</g>
+	<line id="Line 1" x1="60.233398" y1="0.000000" x2="60.233398" y2="35.199951" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<line id="Line 2" x1="60.233398" y1="35.199951" x2="60.233398" y2="70.399902" stroke="#4295E4" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<path id="s" d="M90.78 88C82.54 88 75.12 85.43 68.53 80.3L73.75 71.91C79.61 76.4 85.38 78.64 91.05 78.64C93.43 78.64 95.31 78.09 96.68 77C98.15 75.8 98.88 74.34 98.88 72.59C98.88 70.03 95.49 67.74 88.72 65.72C88.54 65.63 88.31 65.54 88.03 65.44C87.85 65.35 87.71 65.31 87.62 65.31C77 62.47 71.69 57.65 71.69 50.87C71.69 46.1 73.47 42.3 77.04 39.46C80.71 36.62 85.51 35.2 91.47 35.2C97.33 35.2 102.91 36.94 108.22 40.42L104.24 48.39C100.12 45.64 95.59 44.27 90.64 44.27C84.87 44.27 81.99 46.1 81.99 49.77C81.99 51.33 82.54 52.47 83.64 53.21C84.83 53.85 86.75 54.49 89.4 55.13C93.43 56.23 96.82 57.33 99.57 58.43C101.4 59.26 103 60.13 104.38 61.05C107.86 63.43 109.6 67.05 109.6 71.91C109.6 76.67 107.81 80.57 104.24 83.59C100.76 86.53 96.27 88 90.78 88Z" fill="#4295E4" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>

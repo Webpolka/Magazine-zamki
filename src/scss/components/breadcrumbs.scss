@@ -1,0 +1,21 @@
+.section-breadcrumbs {
+    background-color: var(--color-white);
+
+    .breadcrumbs {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        a {
+            font-size: rem(16);
+            line-height: rem(26);
+            font-weight: 400;
+            color: var(--color-black);
+
+            &.active {
+                color: rgb(157, 157, 157);
+            }
+            &:hover{
+                color: rgb(87, 87, 87);
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+
+// --------------------------------------------------------- HTML --------------------------------------------------------------
+//
+// div class="container">
+// <div class="grid">
+//     <div class="item">
+//         <label class="radio-color">
+//             <input class="radio-color__input" type="radio" name="color" value="red" checked>
+//             <span class="radio-color__box red"></span>
+//         </label>
+//     </div>
+//     <div class="item">
+//         <label class="radio-color bred">
+//             <input class="radio-color__input" type="radio" name="color" value="green">
+//             <span class="radio-color__box green"></span>
+//         </label>
+//     </div>
+//     <div class="item">
+//         <label class="radio-color">
+//             <input class="radio-color__input" type="radio" name="color" value="blue">
+//             <span class="radio-color__box blue"></span>
+//         </label>
+//     </div>
+// </div>
+// </div>
+//
+// ----------------------------------------------------------- SCSS -------------------------------------------------------------
+.radio-color {
+    display: inline-flex;
+    align-items: center;
+    text-wrap: nowrap;
+    .white{
+        background-color:  white;        
+    }
+    .black{
+        background-color: black;
+    }
+    .gold{
+        background-color: rgb(226, 195, 85);
+    }
+
+    &__input {
+        appearance: none;
+        position: absolute;
+
+        /* Disabled */
+        &:disabled+.radio-color__box {
+            opacity: 0.7;
+        }       
+
+        /* Checked */
+        &:checked+.radio-color__box {
+            border-color: var(--color-main);
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: center;
+            background-image: url(../../icons/white-yes.svg);
+        }
+        &:checked+.radio-color__box.white {
+            background-image: url(../../icons/grey-yes.svg);
+        }
+
+        &:checked:focus+.radio-color__box {
+            outline: 0px solid white;
+        }
+
+        &:checked:disabled+.radio-color__box {
+            opacity: 0.7;
+        }
+    }
+
+    // .radio-color__box
+    &__box {
+        cursor: pointer;
+        display: block;
+        border: 2px solid var(--color-box);     
+        width: rem(40);
+        height: rem(40);
+
+    }
+}

@@ -1,0 +1,931 @@
+// Заголовки, общие БЄМ блоки и прочее...
+
+.close,
+.none {
+	display: none !important;
+}
+
+.open,
+.hover {
+	display: block !important;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.tal {
+	text-align: left;
+	align-self: center;
+}
+.tar {	
+	text-align: right;
+	align-self: center;
+}
+.tac {	
+	text-align: center;
+	align-self: center;
+}
+
+.center {
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+}
+.aic{
+	display: flex;
+	align-items: center;
+}
+.ais{
+	display: flex;
+	align-items: start;
+}
+.aie{
+	display: flex;
+	align-items: end;
+}
+
+//----------------------------------------------- Containers -----------------------------------------------------------------------
+.container {
+	margin-inline: auto;
+	max-inline-size: rem($max-width-container);
+	padding-inline: rem($main-offset);
+}
+
+.container-full {
+	padding: 0 var(--container-padding);
+	max-width: 100%;
+}
+
+.container-left-50 {
+	padding: 0 var(--container-padding);
+	max-width: 50%;
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+
+.container-right-50 {
+	padding: 0 var(--container-padding);
+	max-width: 50%;
+	margin-left: auto;
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+
+.container-right {
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-left: var(--container-padding);
+	}
+}
+
+.container-left {
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-right: var(--container-padding);
+	}
+}
+
+.container-half-left {
+	padding-right: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-left: var(--container-padding);
+	}
+
+	@include mobile {
+		padding: 0 var(--container-padding);
+	}
+}
+
+.container-half-right {
+	padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-right: var(--container-padding);
+	}
+
+	@include mobile {
+		padding: 0 var(--container-padding);
+	}
+}
+
+//------------------------------------------------------ Grid Ingrid ---------------------------------------------------------------
+
+.grid {
+	// width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: rem(- $main-offset);
+	margin-right: rem(- $main-offset);
+}
+
+.ingrid-1 {
+	width: 100%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-34{
+	width: 75%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-23{
+	width: 66.66%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-13{
+	width: 33.33%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-17{
+	width: 14.28%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-67{
+	width: 85.72%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+
+.ingrid-2 {
+	width: 50%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-3 {
+	width: 33.333%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-4 {
+	width: 25%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-5 {
+	width: 20%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-6, .ingrid-16 {
+	width: 16.666%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-46 {
+	width: 66.64%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.ingrid-56 {
+	width: 83.33%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-7 {
+	width: 14.285%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-8 {
+	width: 12.5%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-9 {
+	width: 11.111%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-11 {
+	width: 9.090%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-12 {
+	width: 8.333%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+//---------------
+.ingrid-10 {
+	width: 10%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-20 {
+	width: 20%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-30 {
+	width: 30%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-40 {
+	width: 40%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-50 {
+	width: 50%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-60 {
+	width: 60%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-70 {
+	width: 70%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-80 {
+	width: 80%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-80 {
+	width: 80%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-90 {
+	width: 90%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+
+.ingrid-100 {
+	width: 100%;
+	height: 100%;
+	padding-left: rem($main-offset);
+	padding-right: rem($main-offset);
+}
+.aic{
+	display: inline-flex;
+	align-items: center;
+}
+.ais{
+	display: inline-flex;
+	align-items: start;
+}
+.aie{
+	display: inline-flex;
+	align-items: end;
+}
+.asc{
+	align-self: center;
+}
+.ass{
+	align-self: flex-start;
+}
+.ase{
+	align-self: flex-end;
+}
+
+.ingrid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+//----------------------------------------------------------Paddings and bred ----------------------------------------------------
+.mb1{
+	margin-bottom: 1rem;
+}
+.mb2{
+	margin-bottom: 2rem;
+}
+.pd5 {
+	padding: rem(5);
+}
+
+.pd10 {
+	padding: rem(10);
+}
+
+.pd15 {
+	padding: rem(15);
+}
+
+.pd20 {
+	padding: rem(20);
+}
+
+.pd25 {
+	padding: rem(25);
+}
+
+.pd30 {
+	padding: rem(30);
+}
+
+.bred {
+	border: 1px solid red;
+}
+.blue,
+.color-tile{
+	background-color: var(--color-tile);
+}
+.white,
+.color-white{
+	background-color: var(--color-white);
+}
+.rotated{
+	transform: rotate(180deg);
+	transition: transform var(--transition);
+}
+.line{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	font-size: rem(16);
+	font-weight: 400;
+	line-height: rem(26);
+	color: var(--color-grey);
+	margin-bottom: rem(10);
+	.checkbox-doll{
+		flex-shrink: 0;
+		align-self: start;
+		margin-top: rem(4);
+		margin-right: 0.5rem;
+	}
+}
+.line-center{
+	display: flex;
+	justify-content: center;
+}
+.line-beetwen{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.line-start{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.column-beetwen{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: inherit;
+}
+.color-main{
+	color: var(--color-main);
+}
+.color-black{
+	color: var(--color-black) ;
+}
+.border{
+	width: 100%;
+	padding-top: rem(30);
+	border-bottom: 2px solid var(--color-box);
+}
+.spot{
+	position: relative;
+	padding-left: 1.5rem;
+	&::before{
+		position: absolute;		
+		content: "";
+		top: rem(6);left: 0;
+		width: rem(6);
+		height: rem(6);	
+		border: rem(6) solid var(--color-main);
+		border-radius: rem(6);
+	}
+}
+//--------------------------------------------------------- Buttons ---------------------------------------------------------------
+.btn {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	background-color: rgb(234, 234, 234);
+	color: black;
+	border: 1px solid #000;
+}
+.btn-main{
+	display: block;
+	padding: rem(14);
+	background-color: var(--color-main);
+	color: var(--color-white);
+	font-size: rem(16);	
+	font-weight: 500;
+	font-family: var(--font-accent);	
+	padding-left: rem(60);
+	padding-right:rem(60);	
+}
+.btn-cat{
+	display: block;
+	padding: rem(14);
+	background-color: transparent;
+	border: 1px solid var(--color-main);
+	color: var(--color-main);
+	font-size: rem(16);
+	line-height: rem(26);
+	font-weight: 500;
+	font-family: var(--font-accent);		
+}
+.btn-transparent{
+	display: block;
+	min-height: rem(40);
+	padding: rem(8);
+	background-color: transparent;
+	border: 1px solid var(--color-box);
+	color: var(--color-black);
+	font-size: rem(16);
+	line-height: rem(26);
+	font-weight: 400;
+	font-family: 'HelveticaNeueCyr', sans-serif;		
+}
+.btn-slide{
+	cursor: pointer;
+	display: block;
+	width: rem(18);
+	height: rem(18);
+	background-image: url(../../icons/up.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+.btn-like{
+	display:flex;	
+	justify-content: center;
+	align-items: center;	
+	padding: rem(14);
+	.icon--like{
+		width: rem(17);
+		height: rem(15);
+	}
+}
+.btn-answer{
+	display: inline-flex;
+	align-items: center;	
+	span{
+		font-size: rem(14);
+		line-height: rem(26);
+		font-weight: 400;
+		color:var(--color-grey);
+		margin-left: 0.5rem;
+	}
+}
+.btn-showyet{
+	display: inline-flex;
+	align-items: center;	
+	span{
+		font-size: rem(14);
+		line-height: rem(26);
+		font-weight: 400;
+		color:var(--color-grey);
+		margin-left: 0.5rem;
+	}
+}
+.btn-numberComments{
+	display: inline-flex;
+	align-items: center;	
+	span{
+		font-size: rem(14);
+		line-height: rem(26);
+		font-weight: 400;
+		color:var(--color-grey);
+		margin-left: 0.5rem;
+	}
+}
+.btn-trash{
+	display: inline-flex;
+	align-items: center;	
+	span{
+		font-family: var(--font-accent);
+		font-size: rem(16);
+		line-height: rem(26);
+		font-weight: 500;
+		color:var(--color-main);
+		margin-left: 0.5rem;
+	}
+}
+.btn-edit{
+	display: inline-flex;
+	align-items: center;	
+	span{
+		font-family: var(--font-main);
+		font-size: rem(14);
+		line-height: rem(24);
+		font-weight: 500;
+		color:var(--color-main);
+		margin-right: 0.5rem;
+	}
+}
+.btn-close{
+	cursor: pointer;
+	display: block;
+	width: rem(15);
+	height: rem(15);
+	background-image: url(../../icons/krestik.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.btn-increase{
+	display: inline-flex;
+	align-items: center;	
+	span{
+		font-family: var(--font-accent);
+		font-size: rem(16);
+		line-height: rem(26);
+		font-weight: 500;
+		color:var(--color-main);
+		margin-left: 0.5rem;
+	}
+}
+
+// ----------------------------------------------- PRODUCT ------------------------------------------------------------------
+
+.product {
+    cursor: pointer;
+
+    &.blue {
+        padding: rem(12) rem(12) 0 rem(12);
+    }
+
+    &.white {
+        padding: 0 rem(12) rem(12) rem(12);	
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            display: inline-flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        span {
+            font-size: rem(14);
+            line-height: rem(24);
+            font-weight: 400;
+            color: var(--color-grey);
+        }
+
+        &-right {
+            .sale {
+                font-size: rem(12);
+                line-height: rem(14);
+                font-weight: 500;
+                color: var(--color-black);
+                padding: rem(8) rem(10);
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        .ibg {
+            width: 100%;
+            min-height: rem(260);
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+	&__rating{
+		padding-top: 0.8rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		.code{
+			font-size: rem(14);
+			line-height: rem(21);
+			color: var(--color-grey);
+		}
+		.stars span{
+			margin-right: 0.1rem;
+		}
+		.comments{
+			font-size: rem(13);
+			line-height: rem(21);
+			font-weight: 400;
+			color: var(--color-grey);
+		}	
+	}
+
+    &__description {
+        font-size: rem(16);
+        line-height: rem(26);
+        font-weight: 400;
+        color: var(--color-grey);
+        padding-top: 0.3rem;
+    }
+
+    &__gift {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        font-size: rem(12);
+        line-height: rem(14);
+        font-weight: 400;
+        color: var(--color-grey);
+        padding: rem(6);
+        background-color: white;
+    }
+
+    &__price {
+        padding-top: 0.5rem;
+
+        b {
+            font-size: rem(24);
+            line-height: rem(29);
+            font-weight: 600;
+            color: var(--color-black);
+        }
+
+        s {
+            font-size: rem(22);
+            line-height: rem(26);
+            font-weight: 300;
+            color: rgb(164, 164, 164);
+            padding-left: 1rem;
+        }
+		@include tablet {
+			b {font-size: rem(20);}
+			s{font-size: rem(16);}			
+		}
+		@include mobile {
+			b {font-size: rem(24);}
+			s{font-size: rem(22);}
+		}
+    }
+	
+}
+//----------------------------------------------- Pagination -------------------------------------------------------
+.pagination{
+    text-align: center;
+    .nav-links{
+        display: inline-flex;
+        align-items: center;
+    }
+    .page-numbers{
+        display: block;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-white);
+        border-radius: var(--radius);
+        margin-left: rem(5);
+        margin-right: rem(5);
+        color: var(--color-black);
+    }
+    .current{
+        display: block;
+        background-color: var(--color-main);
+        border: 1px solid var(--color-main);  
+        color: var(--color-white);
+        border-radius: rem(3);     
+    }
+	@include mobile {      
+        .page-numbers{            
+            padding: 0.25rem 0.5rem;           
+        }
+    }
+}
+//-------------------------------------------------------------- Cart counter ---------------------------------------------
+
+.cart-counter{
+	display: inline-flex;
+	input{
+		width: 4rem;
+		padding: 0.5rem 1rem;
+		border: 1px solid var(--color-box);
+		text-align: center;
+		font-size: rem(14);
+		font-weight: 500;
+	}
+	button{
+		font-size: rem(14);
+		font-weight: 500;
+		padding: 0.5rem 1rem;
+	}
+}
+
+// ------------------------------------------------------------------Price ------------------------------------------------
+.price{
+	    font-size: rem(24);
+		line-height: rem(29);
+		font-weight: 600;
+		color: var(--color-black);
+	b{
+		display: inline-block;
+		font-size: rem(24);
+		line-height: rem(29);
+		font-weight: 600;
+		color: var(--color-black);
+	}
+	s{
+		font-size: rem(22);
+		line-height: rem(26);
+		font-weight: 300;
+		color: rgb(164, 164, 164);
+		padding-left: 1rem;
+	}
+}
+// ------------------------------------------------------- Comment -------------------------------------------------------------
+
+.comment{
+    border: 1px solid var(--color-box);    
+    margin-bottom: rem(30);
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--color-box);
+        padding: rem(20);
+        b{
+            font-size: rem(18);
+            line-height: rem(28);
+            font-weight: 500;
+            color: var(--color-black);
+        }
+        p{
+            font-size: rem(12);
+            line-height: rem(14);
+            font-weight: 300;
+            color:var(--color-grey);
+        }
+    }
+    &__body{
+        padding: rem(20) rem(20) 0 rem(20);
+        p{
+            font-size: rem(14);
+            font-weight: 400;
+            line-height: rem(24);
+            color: var(--color-black);           
+        }
+    }
+    &__foot{
+        padding: rem(20);
+        button{
+            margin-right: 1rem;
+        }
+    }
+}
+
+// ------------------------------------------------------- Comment Form ----------------------------------------------------------
+
+.comment-form {
+    border: 1px solid var(--color-box);
+    padding: rem(20);
+
+    b {
+        display: block;
+        font-family: var(--font-accent);
+        font-size: rem(14);
+        line-height: rem(17);
+        font-weight: 500;
+        color: var(--color-black);
+        margin-bottom: rem(10);
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid var(--color-box);
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        &::placeholder {
+            color: var(--color-disable);
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 10rem;
+        resize: none;
+        border: 1px solid var(--color-box);
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        &::placeholder {
+            color: var(--color-disable);
+        }
+    }
+    .btn-main {
+        width: 100%;
+    }
+}
+//----------------------------------------------- Pattern box --------------------------------------------------------------------
+
+.pattern-box {
+	padding: rem(35);
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: rem(112);
+		height: rem(212);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url(../../icons/Pattern.svg);
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		right: 0;
+		width: rem(112);
+		height: rem(212);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url(../../icons/Pattern.svg);
+	}
+}

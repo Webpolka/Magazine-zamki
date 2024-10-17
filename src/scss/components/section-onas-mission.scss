@@ -1,0 +1,72 @@
+.section-onas-mission {
+    &__grid {
+        align-items: center;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    i {
+        display: block;
+        font-size: rem(24);
+        line-height: rem(36);
+        font-weight: 400;
+        color: var(--color-grey);
+        padding-top: 1rem;
+    }
+
+    .ibg {
+        min-height: rem(500);
+        width: 100%;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .photo-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: rem(30);
+            width: rem(200);
+            height: rem(280);
+            background-image: url(../../images/mission-little.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 5px solid var(--color-white);
+            transition: all var(--transition);
+        }
+    }
+
+    @include tablet {
+        .ingrid-2 {
+            width: 100%;
+        }
+    }
+
+    @include phone {
+        padding-top: 2rem;
+
+        .ibg {
+            min-height: rem(350);
+            width: 100%;
+        }
+
+        .photo-box {
+            &::after {
+                width: rem(100);
+                height: rem(140);
+                bottom: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.section-product-tabs {
+    .tabs__nav {
+        margin-bottom: 1rem;
+    }
+
+    .tabs__trigger {
+        font-size: rem(20);
+        line-height: rem(30);
+        font-weight: 500;
+        color: var(--color-black);
+        padding: 1rem 0;
+        border-bottom: 3px solid var(--color-white);
+    }   
+}
+
+//--------------- таба Характеристики -----------------
+.character-tab__grid {
+    b,
+    span {
+        display: block;
+        width: 100%;
+    }
+
+    b {
+        font-size: rem(16);
+        line-height: rem(26);
+        font-weight: 500;
+        color: var(--color-black);
+    }
+
+    span {
+        font-size: rem(14);
+        line-height: rem(24);
+        font-weight: 400;
+        color: var(--color-grey);
+    }
+
+    .ingrid-row {
+        padding: 1rem;
+    }
+}
+
+@include tablet {
+    .character-tab__grid>.ingrid-2 {
+        width: 100%;
+    }
+}
+
+//--------------- таба Описание -----------------
+.describe-tab__grid {
+    align-items: center;
+
+    p {
+        margin-bottom: 2rem;
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: rem(26);
+        color: var(--color-grey);
+    }
+
+    b {
+        display: block;
+        font-size: rem(20);
+        line-height: rem(28);
+        font-weight: 700;
+        color: var(--color-black);
+        margin-bottom: 1rem;
+    }
+
+    .ibg {
+        min-height: rem(650);
+        width: 100%;
+    }
+
+    .pt {
+        padding-top: 1rem;
+    }
+
+    @include tablet {
+        .ingrid-60 {
+            width: 100%;
+        }
+
+        .ingrid-40 {
+            display: none;
+        }
+    }
+}
+//--------------- таба Комментарии -----------------
+
+.comments-tab__grid{  
+    padding-bottom: 2rem;
+    .btn-showyet{
+        margin-bottom: 2rem;
+    }
+    @include mobile {
+        .ingrid-23,
+        .ingrid-13{
+            width: 100%;
+        }
+    }
+    @include phone {      
+        .comment__head{
+            display: block;
+            p, .stars{
+                margin-top: rem(10);
+            }
+        }
+    }
+}

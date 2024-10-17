@@ -1,0 +1,39 @@
+.section-why{
+   padding-top: rem(90);
+   padding-bottom: rem(90);
+   background-color: var(--color-white);  
+   .title-1{
+    margin-bottom: rem(55);
+   }   
+   .item{
+    text-align: center;   
+    width: 33.33%;
+    height: 100%;   
+   }
+   .item-box{  
+    height: 100%;
+    border-right: 1px solid var(--color-box);
+    border-left: 1px solid var(--color-box);
+    padding: rem(25);
+   }  
+   p{
+    font-size: rem(20);
+    line-height: rem(32);
+    font-weight: 400;
+    color: var(--color-grey);
+    padding-top: rem(35);
+   }
+   @include mobile {
+      padding-top: rem(45);
+      padding-bottom: rem(45);      
+      .title-1{
+       margin-bottom: rem(35);
+      }   
+      .item{      
+         width: 100%;        
+        }
+      p{
+         padding: 0 20%;
+      }
+   }
+}

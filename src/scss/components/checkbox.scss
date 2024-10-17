@@ -1,0 +1,76 @@
+.checkbox {
+	display: flex;
+	width: 100%;
+	gap: 4px;
+	justify-content: space-between;
+	margin-bottom: rem(15);
+
+	// .checkbox__input
+	&__input {
+		appearance: none;
+		position: absolute;
+
+		/* Disabled */
+		&:disabled+.checkbox__box {
+			opacity: 0.7;
+		}		
+
+		/* Checked */
+		&:checked+.checkbox__box {
+			border-color: var(--color-main);
+			background-color: var(--color-main);
+			background-image: url(../../icons/white-yes.svg);
+			background-repeat: no-repeat;
+			background-size: 80%;
+			background-position: center;
+		}
+
+
+		&:checked:disabled+.checkbox__box {
+			opacity: 0.3;
+		}
+	}
+
+	// .checkbox__box
+	&__box {
+		cursor: pointer;
+		display: block;
+		flex-shrink: 0;
+		border: 3px solid rgb(196, 205, 213);
+		border-radius: none ;
+		width: rem(16);
+		height: rem(16);		
+		margin-top: rem(4);
+	}
+
+	&__icon {
+		display: block;		
+		height: 1rem;
+		width: 1rem;
+		border: 1px solid #000;
+		border-radius: var(--radius) ;
+		background-color: grey;
+		// background-image: url(../../icons/answer.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	&__text {	
+		display: block;	
+		width: 100%;
+		font-size: rem(14);
+		line-height: rem(24);
+		font-weight: 400;
+		color: rgb(22, 28, 36);
+		display: block;		
+		justify-self: flex-start;
+	}
+	&__num{
+		display: block;
+		font-size: rem(12);
+		line-height: rem(24);
+		font-weight: 300;		
+		color: var(--color-grey);	
+	}
+}

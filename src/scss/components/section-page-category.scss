@@ -1,0 +1,49 @@
+.section-page-category {
+    padding-top: rem(40);
+    padding-bottom: rem(100);   
+    .title-1 {
+        margin-bottom: rem(65);
+    }
+   .category-item {
+        display: block;       
+        height: 100%;
+        // border: 1px solid var(--color-box);
+        margin-bottom: rem(30);
+      
+        &__image {
+            background-color:  var(--color-tile);
+            .ibg {
+                min-height: rem(300);                            
+            }
+        }
+
+        &__description {
+            background-color:  var(--color-white);
+            p {
+                text-align: center;
+                font-size: rem(16);
+                line-height: rem(26);
+                font-weight: 400;
+                color: var(--color-black);
+                padding: rem(16) 1rem;
+            }
+        }
+
+    }
+   @include mobile {
+    padding-top: rem(30);
+    padding-bottom: rem(50);     
+    .title-1 {
+        margin-bottom: rem(35);
+    }
+    .ingrid-4{
+        width: 50%;
+    }     
+    .category-item__image {       
+        .ibg {
+            min-height: rem(240);                            
+        }
+    }
+
+   }
+}

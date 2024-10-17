@@ -1,0 +1,267 @@
+.section-order {
+    .ingrid-40 {
+        margin-bottom: rem(30);
+    }
+    .ingrid-60{
+        margin-bottom: rem(30);
+    }
+
+    &-border {
+        border-bottom: 2px solid var(--color-box);
+    }
+
+    .title-1 {
+        text-align: left;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    &__left {      
+        border: 2px solid var(--color-box);
+        padding: rem(16) rem(24);
+  
+        &--grid {             
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               gap: 0 rem(20);  
+        }     
+
+        b {
+            display: block;
+            width: 100%;
+            font-size: rem(18);
+            line-height: rem(32);
+            font-weight: 400;
+            color: var(--color-black);
+            margin-bottom: 1rem;
+        }
+
+        label[for="surname"],
+        label[for="name"],
+        label[for="phone"],
+        label[for="email"] {
+            display: block;
+            width: 100%;
+            font-size: rem(12);
+            line-height: rem(20);
+            font-weight: 400;
+            color: var(--color-grey);
+        }
+
+        input[type="text"],
+        input[type="phone"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            font-size: rem(14);
+            font-weight: 400;
+            line-height: rem(24);
+            color: rgb(173, 173, 173);
+            padding: rem(12) rem(16);
+            border: 2px solid var(--color-box);
+            margin-bottom: 1rem;
+        }
+
+        label[for="delivery"],
+        label[for="payment"] {
+            margin-left: 1rem;
+            display: inline-block;
+            font-size: rem(14);
+            font-weight: 400;
+            line-height: rem(24);
+            color: var(--color-grey);
+        }
+
+        label[for="comment-area"] {
+            display: block;
+            font-size: rem(12);
+            font-weight: 400;
+            line-height: rem(20);
+            color: var(--color-grey);
+            margin-bottom: rem(5);
+        }    
+
+        textarea {
+            height: rem(100);
+            resize: none;
+            margin-bottom: 0;
+            padding: rem(10) rem(12);
+        }
+        @include mobile {
+            &--grid{
+                display: block;
+            }
+        }
+    }
+
+
+
+
+
+
+    //---------------------------------------------------------right------------------------------------------------------------
+    &__right {
+        padding: rem(16) rem(25);
+        border: 2px solid var(--color-box);
+        border-bottom: none;
+
+        &--grid {
+            display: grid;
+            grid-template-columns: rem(135) 1fr;
+            gap: 0 rem(15);
+            margin-bottom: rem(20);
+        }
+    }
+
+    .order {
+        .btn-close {
+            width: rem(11);
+            height: rem(11);
+        }
+
+        .line-beetwen {
+            align-items: start;
+        }
+
+        p {
+            font-size: rem(14);
+            line-height: rem(18);
+            font-weight: 400;
+            padding-bottom: rem(10);
+        }
+
+        .gift {
+            align-items: start;
+            display: inline;
+
+            nobr {
+                font-size: rem(12);
+                line-height: rem(14);
+                font-weight: 400;
+            }
+
+            a {
+                font-size: rem(12);
+                line-height: rem(20);
+                font-weight: 400;
+                text-decoration: underline;
+            }
+        }
+
+        .cart-counter {
+            input {
+                width: 2rem;
+                padding: 0.5rem 0.5rem;
+                border: 1px solid var(--color-box);
+                text-align: center;
+                font-size: rem(13);
+                font-weight: 500;
+            }
+
+            button {
+                font-size: rem(14);
+                font-weight: 500;
+                padding: 0.5rem 0.5rem;
+            }
+        }
+
+        .price {
+            b {
+                display: inline-block;
+                font-size: rem(14);
+                line-height: rem(24);
+                margin-left: 1rem;
+            }
+
+            s {
+                display: inline-block;
+                font-size: rem(12);
+                line-height: rem(20);
+                padding-left: rem(10);
+            }
+            @include mobile {             
+                s {                  
+                    display: none;
+                }                  
+            }
+        }
+
+        .ibg {
+            min-height: rem(120);
+            background-color: var(--color-tile);
+        }
+
+        .btn-increase {
+            margin-left: 0;
+        }
+    }
+
+    .itog {
+        .itogo {
+            font-size: rem(14);
+            line-height: rem(24);
+            font-weight: 400;
+        }
+
+        .itogo-price {
+            font-size: rem(16);
+            line-height: rem(26);
+            font-weight: 500;
+        }
+    }
+
+    .complectation {
+        .checkbox {
+            width: inherit;
+            margin-right: 2rem;
+            margin-bottom: 0;
+        }
+
+        .checkbox__text {
+            margin-left: rem(5);
+        }
+    }
+
+    .promo {
+        p {
+            font-size: rem(16);
+            line-height: rem(26);
+            font-weight: 500;
+            font-family: var(--font-accent);
+            padding-bottom: 0;
+        }
+
+        .btn-main {
+            margin-top: rem(10);
+            margin-bottom: rem(16);
+        }
+    }
+
+    .agreement {
+
+        span,
+        a {
+            font-size: rem(12);
+            line-height: rem(20);
+            font-weight: 400;
+        }
+
+        a {
+            color: var(--color-main);
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    @include tablet {
+        .ingrid-40{
+            width: 100%;
+        }
+        .ingrid-60{
+            width: 100%;
+        }
+    }
+   
+}

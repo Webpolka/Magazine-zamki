@@ -1,0 +1,119 @@
+.section-registr {
+    background-color: rgb(242, 248, 255);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+
+    .describe-registartion {
+        h2 {
+            text-align: left;
+        }
+
+        p {
+
+            font-size: rem(16);
+            line-height: rem(26);
+            font-weight: 400;
+            color: var(--color-grey);
+        }
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 0 rem(30);
+    }
+
+    .form-registration {
+        background-color: #fff;
+        padding: rem(32);
+
+        &--grid {
+            gap: rem(12) rem(16);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "i1 i2 i3"
+                "i4 i4 i5";
+
+            .item-1 {
+                grid-area: i1;
+            }
+
+            .item-2 {
+                grid-area: i2;
+            }
+
+            .item-3 {
+                grid-area: i3;
+            }
+
+            .item-4 {
+                grid-area: i4;
+            }
+
+            .item-5 {
+                grid-area: i5;
+            }
+
+            label {
+                display: block;
+                font-size: rem(12);
+                line-height: rem(20);
+                font-weight: 400;
+                color: var(--color-black);
+                margin-bottom: rem(5);
+            }
+
+            input {
+                font-size: rem(14);
+                line-height: rem(20);
+                font-weight: 400;
+                color: rgb(173, 173, 173);
+                padding: rem(12) rem(16);
+                border: 2px solid var(--color-box);
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+        }
+        .checkbox__text{
+            margin-left: 0.5rem;
+        }
+        .cost{
+            span{
+                display: block;
+                font-size: rem(12);
+                line-height: rem(20);
+                font-weight: 400;
+                color: var(--color-grey);
+            }
+            b{
+                display: block;
+                font-size: rem(18);
+                line-height: rem(26);
+                font-weight: 600;
+                color: var(--color-black);
+            }
+        }
+        
+    }
+    @include mobile {
+        padding-top: rem(40);
+        padding-bottom: rem(40);
+        &--grid {
+           display: block;
+        }
+        .describe-registartion{
+            margin-bottom: 2rem;
+            text-align: center;
+            .title-1{              
+                text-align: center;
+            }
+        }
+        .form-registration--grid{
+            display: block;
+        }
+    }
+  
+    
+}

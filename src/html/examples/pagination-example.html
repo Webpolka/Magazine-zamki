@@ -1,0 +1,40 @@
+<!-- .pagination{
+    text-align: center;
+    .nav-links{
+        display: inline-flex;
+        align-items: center;
+    }
+    .page-numbers{
+        display: block;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-white);
+        border-radius: var(--radius);
+        margin-left: rem(5);
+        margin-right: rem(5);
+        color: var(--color-black);
+    }
+    .current{
+        display: block;
+        background-color: var(--color-main);
+        border: 1px solid var(--color-main);  
+        color: var(--color-white);
+        border-radius: rem(3);     
+    }
+} -->
+
+<nav class="navigation pagination" aria-label="Записи">                    
+    <div class="nav-links">
+        <a class="prev page-numbers" href="#"><i class="left"></i></a>
+        <span aria-current="page" class="page-numbers current">1</span>
+        <a class="page-numbers" href="#">2</a>
+        <a class="page-numbers" href="#">3</a>
+        <a class="page-numbers" href="#">4</a>
+        <a class="page-numbers" href="#">5</a>
+        <a class="page-numbers" href="#">6</a>
+        <a class="page-numbers" href="#">7</a>
+        <span class="page-numbers dots">…</span>
+        <a class="page-numbers" href="#">15</a>
+        <a class="next page-numbers" href="#"><i class="right"></i></a>
+    </div>
+</nav>

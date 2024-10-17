@@ -1,0 +1,97 @@
+.section-product{
+    padding-top: rem(40);
+    padding-bottom: rem(50);
+    .product__rating{
+        padding-top: 0;
+        padding-bottom: rem(16);
+        .comments{
+            color:var(--color-main);
+        }
+    }
+    .product__fits{          
+        b{
+            display: block;
+            font-size: rem(14);
+            line-height: rem(24);
+            font-weight: 600;
+            color: var(--color-black);
+            padding-top: rem(15);
+            padding-bottom: rem(15);
+        }    
+        &-item{
+            display: inline-flex;
+            align-items: center;           
+            margin-right: 1.2rem;
+            margin-bottom: rem(25);
+        }  
+        .checkbox{
+            margin-bottom: 0;
+        }
+        .checkbox__box{
+            margin-right:rem(5);
+        }   
+        .checkbox__text{
+            font-size: rem(14);
+            line-height: rem(24);
+            color: var(--color-grey);
+        }  
+    }
+    .product__complectation{
+            b{
+                display: block;
+                font-size: rem(16);
+                line-height: rem(24);
+                font-weight: 600;
+                color: var(--color-black);
+                margin-bottom: rem(8);
+            }
+            select{
+                cursor: pointer;
+                width: 100%;
+                min-height: rem((40));
+                padding: rem(8) rem(16);
+                border: 1px solid var(--color-box);
+                font-size: rem(14);
+                line-height: rem(24);
+                font-weight: 400;
+                color: var(--color-black);
+            }
+    }
+    .product__price{
+        padding-top: rem(15);
+        padding-bottom: rem(5);
+    }
+    .product__buttons{       
+        padding-top: 0.8rem;
+        .btn-main{
+            width: 100%;
+            height: rem(50);
+        }
+        .btn-like{
+            
+            span{
+                margin-left: 0.5rem;
+            }
+        }        
+    }
+    .product__accordion{
+        padding-top: rem(30);
+        .opened{display: block !important;}
+    }
+    @include mobile {       
+        .ingrid-2{
+            width: 100%;
+        }
+
+        .product__rating{
+            padding-top: 2rem;
+        }
+        .btn-like{
+            width: 100%;           
+        }
+    }
+    @include phone {
+        padding-bottom: rem(30);
+    }
+
+}

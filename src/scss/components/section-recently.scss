@@ -1,0 +1,91 @@
+.section-recently {  
+    padding-bottom: rem(95);
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: rem(35);
+        @include mobile {
+            display: block;           
+        }
+    }
+
+    &__slider {
+        display: flex;
+    }
+
+    &__slide {
+        display: block;
+        border: 1px solid var(--color-box);
+        width: 100%;
+    }
+
+    &__panel {
+
+        position: relative;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .recentlyNav .owl-prev,
+        .recentlyNav .owl-next {
+            position: absolute;
+        }
+
+        .recentlyNav .owl-prev {
+            left: 0;
+            top: 2px;
+            width: rem(11);
+            height: rem(21);
+            background-image: url(../../icons/left.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .recentlyNav .owl-next {
+            right: 0;
+            top: 2px;
+            width: rem(11);
+            height: rem(21);
+            background-image: url(../../icons/right.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .recentlyDots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                display: inline-block;
+                width: rem(25);
+                height: rem(25);
+                background-color: rgb(173, 215, 255);
+                border: rem(8) solid var(--color-white);
+                outline: 1px var(--color-white) solid;
+                border-radius: 5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .owl-dot.active {
+                background-color: var(--color-main);
+                outline: 1px var(--color-main) solid;
+            }
+        }
+
+    }
+
+
+    @include mobile {
+        padding-top: rem(20);
+        padding-bottom: rem(40);
+
+        &__top {
+            margin-bottom: rem(30);
+        }        
+    }   
+}

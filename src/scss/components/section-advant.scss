@@ -1,0 +1,52 @@
+.section-advant {
+    background-color: rgb(242, 248, 255);
+    .item {
+        width: 16.66%;
+        text-align: center;
+        padding-top: rem(40);
+        padding-bottom: rem(40);
+    }
+
+    b {
+        display: block;
+        font-size: rem(32);
+        font-weight: 600;
+        line-height: rem(38);
+        font-family: var(--font-accent);
+        margin-bottom: rem(16);
+    }
+
+    p {
+        font-size: rem(16);
+        line-height: rem(26);
+        font-weight: 600;
+        color: var(--color-grey);
+        font-family: var(--font-main);
+    }
+    @include mobile {
+        .item-1,
+        .item-6{
+          width: 0;
+          display: none;
+        }
+        .item-2,
+        .item-3,
+        .item-4,
+        .item-5{
+            width:25%;          
+        }
+    }
+    @include phone { 
+        .item {        
+            padding-top: rem(20);
+            padding-bottom: rem(20);
+        }
+          
+        .item-2,
+        .item-3,
+        .item-4,
+        .item-5{
+            width:50%;          
+        }
+    }
+}

@@ -1,0 +1,218 @@
+<section class="section-order">
+    <h2 class="visually-hidden">Оформление заказа</h2>
+    <div class="container">
+        <h2 class='title-1'>Оформление заказа</h2>
+        <form action="" id="form-order">
+            <div class="section-order__grid">
+
+                <!-- ----------------------------------------------------------   Левая сторона ----------------------------------------------------------- -->
+
+                <div class="ingrid-60">
+                    <div class="section-order__left">
+
+                        <!-- -----------  Контактные данные -------------- -->
+                        <b>1. Контактные данные</b>
+                        <div class="section-order__left--grid">
+                            <div class="grid-box">
+                                <label for="surname">Фамилия</label>
+                                <input type="text" name="surname" placeholder="Зайцев">
+                            </div>
+
+                            <div class="grid-box">
+                                <label for="name">Имя</label>
+                                <input type="text" name="name" placeholder="Михаил">
+                            </div>
+
+                            <div class="grid-box">
+                                <label for="phone">Телефон</label>
+                                <input type="phone" name="phone" placeholder="+7 (_ _ _) _ _  _ _  _ _ _">
+                            </div>
+
+                            <div class="grid-box">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="example@mail.ru">
+                            </div>
+                        </div>
+                        <!-- ----------- Доставка -------------- -->
+                        <b>2. Доставка</b>
+                        <div class="line-start">
+                            <input type="radio" name="delivery" value="delivery-1">
+                            <label for="delivery">Сдек</label>
+                        </div>
+
+                        <div class="line-start">
+                            <input type="radio" name="delivery" value="delivery-2" checked>
+                            <label for="delivery">Почта России</label>
+                        </div>
+
+                        <div class="line-start mb1">
+                            <input type="radio" name="delivery" value="delivery-3">
+                            <label for="delivery">Деловые линии</label>
+                        </div>
+
+                        <!-- ----------- Оплата -------------- -->
+                        <b>3. Оплата</b>
+                        <div class="line-start">
+                            <input type="radio" name="payment" value="payment-1" checked>
+                            <label for="payment">Оплата при получении товара</label>
+                        </div>
+
+                        <div class="line-start mb1">
+                            <input type="radio" name="payment" value="payment-2">
+                            <label for="payment">Банковская карта</label>
+                        </div>
+
+                        <!-- ----------- Комеентарий -------------- -->
+                        <label for="comment-area">Комментарий</label>
+                        <textarea name="comment-area" id="" placeholder="Напишите комментарий"></textarea>
+
+                    </div>
+                </div>
+
+                <!-- ----------------------------------------------------------   Правая сторона ----------------------------------------------------------- -->
+                <div class="ingrid-40">
+                    <div class="section-order__right">
+                        <b class="title-3">Итого</b>
+                    </div>
+
+
+                    <div class="order">
+                        <div class="section-order__right">
+                            <!-- -------------- 1 ------------- -->
+                            <div class="section-order__right--grid">
+                                <div class="grid-part">
+                                    <div class="ibg"><img src="../../images/cat-3.jpeg" alt="pic"></div>
+                                </div>
+
+                                <div class="grid-part column-beetwen">
+                                    <div class="column-box">
+                                        <div class="line-beetwen">
+                                            <p>Дверной Замок Golden Soft для офиса</p>
+                                            <button class="btn-close"></button>
+                                        </div>
+                                        <div class="line-start gift">
+                                            <nobr>+ Подарок: </nobr><br>
+                                            <a href="#">“Приложение к замкам Golden Service”</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-box">
+                                        <div class="line-start asc">
+                                            <div class="cart-counter">
+                                                <button class="counter-minus">-</button>
+                                                <input type="number" value="1">
+                                                <button class="counter-plus">+</button>
+                                            </div>
+                                            <div class="price">
+                                                <b>33 000₽</b>
+                                                <s>39 000₽</s>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- -------------- 2 ------------- -->
+                            <div class="section-order__right--grid">
+                                <div class="grid-part">
+                                    <div class="ibg"><img src="../../images/cat-3.jpeg" alt="pic"></div>
+                                </div>
+
+                                <div class="grid-part column-beetwen">
+                                    <div class="column-box">
+                                        <div class="line-beetwen">
+                                            <p>Дверной Замок Golden Soft для офиса</p>
+                                            <button class="btn-close"></button>
+                                        </div>
+                                        <div class="line-start gift">
+                                            <nobr>+ Подарок: </nobr><br>
+                                            <a href="#">“Приложение к замкам Golden Service”</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-box">
+                                        <div class="line-start asc">
+                                            <div class="cart-counter">
+                                                <button class="counter-minus">-</button>
+                                                <input type="number" value="1">
+                                                <button class="counter-plus">+</button>
+                                            </div>
+                                            <div class="price">
+                                                <b>33 000₽</b>
+                                                <s>39 000₽</s>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- ----------------------------------------- Итог ------------------------------ -->
+                    <div class="itog">
+                        <div class="section-order__right">
+                            <div class="line-beetwen">
+                                <button class="btn-edit">
+                                    <span>Редактировать</span>
+                                    <svg class="icon icon--edit">
+                                        <use href="./icons/symbol/sprite.svg#edit"></use>
+                                    </svg>
+                                </button>
+                                <div class="result">
+                                    <span class="itogo">Итого:</span>
+                                    <span class="itogo-price">66 000₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------------------- Комплектация ------------------------------ -->
+                    <div class="complectation">
+                        <div class="section-order__right">
+                            <p>Комплектация</p>
+                            <div class="line-start">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="install" value="install">
+                                    <span class="checkbox__box"></span>
+                                    <span class="checkbox__text">Нужна установка</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="setup" checked value="setup">
+                                    <span class="checkbox__box"></span>
+                                    <span class="checkbox__text">Настройка софта</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------------------- Промокод ------------------------------ -->
+                    <div class="promo">
+                        <div class="section-order__right">
+                            <div class="line-center">
+                                <button type="submit" class="btn-main">Подтвердить заказ</button>
+                            </div>
+
+                            <div class="line-beetwen">
+                                <p>Промокод</p>
+                                <button class="btn-increase"><span>Добавить</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- --------------------- Пользовательського соглашения ------------------------------ -->
+                    <div class="agreement">
+                        <div class="section-order__right">
+                            <div class="tac">
+                                <span>Оформляя заказ, я принимаю условия</span>
+                                <a href="#"> пользовательського соглашения</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------- Нижнее подчеркивание--------- -->
+                    <div class="section-order-border"></div>
+
+                    <!-- --------------------------------------------------- конец левой стороны ------------------------------------------------ -->
+                </div>
+        </form>
+    </div>
+</section>

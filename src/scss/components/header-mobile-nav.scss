@@ -1,0 +1,219 @@
+// -------------------------------------------------------- SCSS -----------------------------------------------------------------------
+
+.mobile-nav {
+	//---------- Настраиваем мобильное меню здесь---------------
+	--Bg-: rgb(0, 0, 0, 0.3);
+	--TextColor-: black;
+	--HoverTextColor-: black;
+	--HoverLiBgColor-: rgb(0, 0, 0, 0.04);
+	--PaddingLi-: 0;
+	--FontSize-: 2rem;
+	--PaddingTop-: 9.5rem;
+	//----------------------------------------------------------
+
+	position: fixed;
+	// top: 0;
+	top: -150%;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	padding-top: var(--PaddingTop-);
+	padding-bottom: rem(30);
+	// background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
+	background: var(--Bg-);
+	transition: all var(--transition);
+
+	&--open {
+		top: 0px;
+	}
+
+	a {
+		font-size: var(--FontSize-);
+		color: var(--TextColor-);
+		;
+	}
+
+	&__list {
+		width: 100%;
+		text-align: center;
+		background-color: #fff;
+
+		& .active {
+			opacity: 0.5;
+		}
+
+		li {
+			padding: var(--PaddingLi-);
+			border: 1px solid rgb(0, 0, 0, 0.07);
+
+			a {
+				display: block;
+				width: 100%;
+				padding: 1rem;
+			}
+
+			&:hover {
+				color: grey;
+				background: var(--HoverLiBgColor-);
+				cursor: pointer;
+
+				a {
+					color: var(--HoverTextColor-);
+				}
+			}
+		}
+
+		ul.nav__sublist {
+			display: none;
+
+			li {
+				padding: 0;
+				background-color: white;
+
+				a {
+					font-size: 1rem;
+					padding: 0.7rem;
+					line-height: 1rem;
+				}
+
+				&:hover {
+					background-color: rgb(234, 234, 234);
+				}
+			}
+		}
+	}
+}
+
+// -------------------------- САМ БУРГЕР ----------------------
+
+.mobile-nav__btn {
+
+	//---- Стилизуем Бургер ------
+	--burgerWidth-: 2rem;
+	--burgerHeight-: 1.5rem;
+	--barHeight-: 0.2rem;
+	--barColor-: black;
+	--barBorderRadius-: 2px;
+	//----------------------------
+
+	display: none;
+
+	@include tablet {
+		display: block;
+		position: relative;
+		width: var(--burgerWidth-);
+		height: var(--burgerHeight-);
+
+		cursor: pointer;
+		z-index: 15;
+		top: 0;
+		left: 0;
+
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all var(--transition);
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: var(--barHeight-);
+			background-color: var(--barColor-);
+			border-radius: var(--barBorderRadius-);
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		span {
+			top: calc(50% - (var(--barHeight-) / 2));
+		}
+
+		&--active {
+			span {
+				width: 0;
+			}
+
+			&::before {
+				top: calc(50% - (var(--barHeight-) / 2));
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				bottom: calc(50% - (var(--barHeight-) / 2));
+				transform: rotate(45deg);
+			}
+
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------UL.header-nav__list anв UL.nav__sublist -------------------------------------------------
+
+.header-nav__list {
+	display: flex;
+	column-gap: 30px;
+
+	li {
+		position: relative;
+		a{
+			transition: transform var(--transition);
+		}
+
+		&>a:hover {
+			display: block;
+			transform: translateY(-2px);					
+			background-color: none;
+		}
+
+		&.hover {
+			ul.nav__sublist {
+				display: block;
+			}
+		}
+
+		ul.nav__sublist {
+			display: none;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			margin-top: 1.4rem;
+
+			&.hover {
+				display: block !important;
+			}
+
+			li {
+				border: 1px rgb(234, 234, 234) solid;
+				background: white;
+				cursor: pointer;
+
+				&>a:hover {
+					// color: white;
+					background-color: var(--color-box);
+				}
+			}
+
+			a {
+				font-size: 1rem;
+				display: block;
+				padding: 0.7rem;
+				line-height: 1rem;
+				// min-width: 15rem;
+			}
+
+		}
+	}
+}

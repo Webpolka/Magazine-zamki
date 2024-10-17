@@ -1,0 +1,84 @@
+.section-whywe{
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+    background-color: rgb(242, 248, 255);
+    h2{
+        text-align: left;
+        margin-bottom: rem(65);
+    }
+    .left{
+        .ibg{
+            min-height: rem(560);
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+    .describe{  
+        padding-left: rem(45); 
+        border-left: 2px solid var(--color-main);
+        &:last-child{
+            border-left:none;
+        }
+    }
+    .right{         
+        padding-left: 6rem;
+        p{
+            font-size: rem(16);
+            line-height: rem(26);
+            font-weight: 400;
+            color: rgb(22, 28, 36,0.7);
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+        b{
+            position: relative;            
+            display: block;
+            padding: 1rem 0;
+            font-size: rem(20);
+            line-height: rem(32);
+            font-weight: 600;
+            color: var(--color-black);
+            &::before{
+                position: absolute;
+                content: "";
+                top: rem(6);left: rem(-75);
+                width: rem(56);
+                height: rem(56);
+                border: 1px solid var(--color-main);
+                outline: 8px solid rgb(242, 248, 255);
+                border-radius: rem(56);
+                background-color: rgb(242, 248, 255);                
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: center;
+            }
+            &.descibe-1::before{
+                background-image: url(../../icons/back.svg);
+            }
+            &.descibe-2::before{
+                background-image: url(../../icons/montaj.svg);
+            }
+            &.descibe-3::before{
+                background-image: url(../../icons/brand.svg);
+            }
+            &.descibe-4::before{
+                background-image: url(../../icons/back.svg);
+            }
+        }
+    }
+    @include mobile {
+        padding-top: rem(50);
+        padding-bottom: rem(50);       
+        h2{
+            margin-bottom: rem(35);
+        }
+        .ingrid-2{
+            width: 100%;
+        }
+        .right{
+            padding-top: 2rem;
+        }
+    }
+    
+}

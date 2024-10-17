@@ -1,0 +1,130 @@
+.section-ourbig {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+    background-color: var(--color-white);
+
+    &__slide {
+        padding: rem(55);
+        border: 2px solid var(--color-box);
+    }
+
+    .title-1 {
+        text-align: left;
+        margin-bottom: rem(65);
+    }
+
+    .ibg {
+        min-height: rem(325);
+        width: 100%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .line-start {
+        margin-bottom: 1rem;
+
+        i {
+            flex-shrink: 0;
+            align-self: start;
+            margin-right: 0.8rem;
+            margin-top: rem(3);
+        }
+
+        span {
+            font-size: rem(16);
+            line-height: rem(26);
+            font-weight: 400;
+            color: rgb(22, 28, 36, 0.7);
+        }
+    }
+
+    .icon--radisson {
+        margin-bottom: 1rem;
+    }
+
+    .title-3 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    b {
+        font-size: rem(24);
+        line-height: rem(34);
+        font-weight: 600;
+    }
+
+    &__panel {
+        margin-top: 3rem;
+
+        position: relative;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .ourbigNav .owl-prev,
+        .ourbigNav .owl-next {
+            position: absolute;
+        }
+
+        .ourbigNav .owl-prev {
+            left: 0;
+            top: 2px;
+            width: rem(11);
+            height: rem(21);
+            background-image: url(../../icons/left.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .ourbigNav .owl-next {
+            right: 0;
+            top: 2px;
+            width: rem(11);
+            height: rem(21);
+            background-image: url(../../icons/right.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .ourbigDots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                display: inline-block;
+                width: rem(25);
+                height: rem(25);
+                background-color: rgb(173, 215, 255);
+                border: rem(8) solid var(--color-white);
+                outline: 1px var(--color-white) solid;
+                border-radius: 5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .owl-dot.active {
+                background-color: var(--color-main);
+                outline: 1px var(--color-main) solid;
+            }
+        }
+
+    }
+
+    @include mobile {
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+        .title-1 {          
+            margin-bottom: rem(45);
+        }
+        .icon--radisson{
+            margin-top: 2rem;
+        }
+        .ingrid-2{
+            width: 100%;
+        }
+    }
+}

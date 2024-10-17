@@ -1,0 +1,113 @@
+.section-onas-conatct {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+    background-color: rgb(242, 248, 255);
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap: 0 rem(80);
+    }
+
+    .left {
+        p {
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(26);
+            color: var(--color-grey);
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(26);
+            color: var(--color-grey);
+            background-color: rgba(22, 28, 36, 0.04);
+            padding: rem(12) rem(16);
+            cursor: pointer;
+            margin-bottom: rem(25);
+        }
+
+        .btn-main {
+            margin-top: rem(35);
+        }
+    }
+
+    .right {
+        b {
+            display: block;
+            font-size: rem(18);
+            font-weight: 600;
+            line-height: rem(28);
+            color: var(--color-black);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(26);
+            color: var(--color-grey);
+        }
+
+        .ibg {
+            min-height: rem(155);
+            width: 100%;
+            margin-top: 1rem;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .grid-box--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 rem(15);
+    }
+
+    @include tablet {
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+
+        &--grid {
+            display: block;
+        }
+
+        .grid-box {
+            margin-bottom: 1.5rem;
+
+        }
+    }
+
+    @include phone {
+        padding-bottom: rem(20);
+        .grid-box--grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "gb1 gb2"
+                "gb3 gb3";
+
+            .gb-1 {
+                grid-area: gb1;
+            }
+
+            .gb-2 {
+                grid-area: gb2;
+            }
+
+            .gb-3 {
+                grid-area: gb3;
+            }
+        }
+    }
+}

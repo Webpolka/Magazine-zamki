@@ -1,0 +1,124 @@
+<!------------------------------------------------- PRODUCT ------------------------------------------------------------------ -->
+<!-- 
+.product {
+    cursor: pointer;
+    &.blue {
+        background-color: var(--color-tile);
+        padding: rem(12) rem(12) 0 rem(12);
+    }
+    &.white {
+        background-color: var(--color-white);
+        padding: 0 rem(12) rem(12) rem(12);	
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            display: inline-flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        span {
+            font-size: rem(14);
+            line-height: rem(24);
+            font-weight: 400;
+            color: var(--color-grey);
+        }
+
+        &-right {
+            .sale {
+                font-size: rem(12);
+                line-height: rem(14);
+                font-weight: 500;
+                color: var(--color-black);
+                padding: rem(8) rem(10);
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        .ibg {
+            width: 100%;
+            min-height: rem(260);
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__description {
+        font-size: rem(16);
+        line-height: rem(26);
+        font-weight: 400;
+        color: var(--color-grey);
+        padding-top: 1rem;
+    }
+
+    &__gift {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        font-size: rem(12);
+        line-height: rem(14);
+        font-weight: 400;
+        color: var(--color-grey);
+        padding: rem(6);
+        background-color: white;
+    }
+
+    &__price {
+        padding-top: 0.5rem;
+
+        b {
+            font-size: rem(24);
+            line-height: rem(29);
+            font-weight: 600;
+            color: var(--color-black);
+        }
+
+        s {
+            font-size: rem(22);
+            line-height: rem(26);
+            font-weight: 300;
+            color: rgb(164, 164, 164);
+            padding-left: 1rem;
+        }
+    }
+}
+ -->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+<div class="product blue">
+    <div class="product__top">
+        <div class="product__top-left">
+            <i class="no"></i><span>Нет в наличии</span>
+        </div>
+        <div class="product__top-right">
+            <p class="sale">SALE</p>
+        </div>
+    </div>
+    <div class="product__image">
+        <div class="ibg"><img src="../../images/pop-2.jpeg" alt="cat1"></div>
+        <div class="product__gift">
+            <i class="gift"></i><span>Подарок</span>
+        </div>
+    </div>
+</div>
+<div class="product white">
+    <div class="product__description">
+        <p>Вариативный замок Golden Soft для отеля</p>
+    </div>
+    <div class="product__price">
+        <b>7 000₽</b>
+        <s>8 000₽</s>
+    </div>
+</div>

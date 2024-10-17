@@ -1,0 +1,125 @@
+.section-callback {
+    background-color: var(--color-bg-light);
+    padding-top: rem(65);
+    padding-bottom: rem(65);
+    font-family: var(--font-main);
+
+    .item-1 {
+        width: 16.66%;
+        height: 100%;
+
+        .item__box {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 100%;
+            min-height: rem(185);
+            background-color: var(--color-white);
+            position: relative;
+            top: -0.5rem;
+            right: -2.5rem;
+        }
+
+        .ibg {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            width: rem(110);
+            height: rem(89);
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .item-2 {
+        width: 66.64%;
+        height: 100%;
+
+        p {
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(26);
+            color: var(--color-grey);
+            text-align: center;
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: rem(26);
+            color: var(--color-grey);
+            background-color: rgba(22, 28, 36, 0.04);
+            padding: rem(12) rem(16);
+            cursor: pointer;
+        }
+
+        .btn-main {
+            width: 100%;
+        }
+
+        .item-grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: rem(25);
+            margin-right: rem(- 10);
+            margin-left: rem(- 10);
+
+            &__box {
+                width: 33.33%;
+                padding-left: rem(10);
+                padding-right: rem(10);
+            }
+
+        }
+
+        @include mobile {
+            .item-grid {
+                flex-wrap: wrap;
+            }
+
+            .item-grid__box {
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .item-3 {
+        width: 16.66%;
+        height: 100%;
+    }
+
+
+    @include tablet {
+        .item-1 {
+            display: none;
+        }
+
+        .item-2 {
+            width: 100%;
+            p {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .item-3 {
+            display: none;
+
+        }
+    }
+
+    @include mobile {
+        padding-top: rem(45);
+        padding-bottom: rem(45);
+       
+    }
+
+
+}

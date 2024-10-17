@@ -1,0 +1,57 @@
+.section-onas-video {
+    &__grid {
+        align-items: center;
+    }
+
+    .line-start {
+        align-items: start;
+        padding-top: 1rem;
+
+        .title-1 {
+            text-align: left;
+        }
+    }
+
+   
+
+    .ibg {
+        min-height: rem(500);
+        width: 100%;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    p {
+        font-size: rem(14);
+        line-height: rem(24);
+        font-weight: 400;
+        color: var(--color-grey);
+        margin-bottom: 2rem;
+    }
+
+    @include tablet {
+        .ingrid-2 {
+            width: 100%;
+        }
+    }
+    @include mobile {
+        .ibg {
+            min-height: rem(300);
+            width: 100%;
+        }
+        .line-start {           
+            .title-1 {
+              padding-top: 0.5rem;
+              padding-bottom: 1rem;
+              margin-bottom: 0;
+              font-size: 2rem;
+              line-height: 2rem;
+            }
+        }
+        .pattern-box{
+
+        }
+    }
+}

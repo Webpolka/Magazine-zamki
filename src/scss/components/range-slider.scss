@@ -1,0 +1,93 @@
+
+// ----------------------------------------------------- HTML -------------------------------------------------------------------
+//
+// <div class="range">
+// <div class="grid">
+//     <div class="ingrid-2">
+//         <input type="text" id="minRange" readonly="">
+//     </div>
+//     <div class="ingrid-2">
+//         <input type="text" id="maxRange" readonly="">
+//     </div>
+// </div>
+// <div id="slider-range"></div>
+// </div>
+//
+// ------------------------------------------------------- JS ------------------------------------------------------------------
+//
+// function rangeSlider() {
+//     $("#slider-range").slider({
+//         range: true,
+//         min: 0,
+//         max: 500,
+//         values: [75, 300],
+//         slide: function (event, ui) {
+//             $("#minRange").val(ui.values[0] + " Руб");
+//             $("#maxRange").val(ui.values[1] + " Руб");
+//         }
+//     });
+//     $("#minRange").val($("#slider-range").slider("values", 0) + " Руб");
+//     $("#maxRange").val($("#slider-range").slider("values", 1) + " Руб");
+// }
+//
+// export default rangeSlider;
+//
+// -------------------------------------------------------- SCSS -----------------------------------------------------------------
+.range {      
+
+    input {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: rem(10);
+        background-color: var(--color-white);
+        border: 1px solid var(--color-box);
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(24);
+        color: var(--color-black);
+        &:focus{
+            border: 1px solid var(--color-main);
+        }
+    }
+
+    #slider-range {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    //------------------------------------ UI Range Slider Styles -----------------------
+    --rangeHorizontalBg-: rgb(234, 234, 234);
+    --rangeHorizontalHeight-: 0.25rem;
+    --rangeHorizontalBorder-: 1px rgb(234, 234, 234) solid;
+    --rangeHorizontalBorderRadius-: 4px;
+
+    --rangeHandleWidth-: 1.5rem;
+    --rangeHandleHeight-: 1.5rem;
+    --rangeHandleBg-: var(--color-white);
+    --rangeHandleBorder-: 1px var(--color-main) solid;
+    --rangeHandleBorderRadius-: 2px;
+
+    --rangeBgRange-: var(--color-main);
+
+    .ui-slider.ui-slider-horizontal {
+        background: var( --rangeHorizontalBg-);
+        height:var(--rangeHorizontalHeight-);
+        border:var(--rangeHorizontalBorder-);
+        border-radius: var(--rangeHorizontalBorderRadius-);
+    }
+    .ui-slider .ui-slider-handle {
+        width: var( --rangeHandleWidth-); 
+        height: var(--rangeHandleHeight-);       
+        top: calc((var(--rangeHorizontalHeight-) / 2 - var(--rangeHandleHeight-) / 2) - 1px) ;
+        border: var(--rangeHandleBorder-);  
+        border-radius: var(--rangeHandleBorderRadius-);        
+        background: var(--rangeHandleBg-);
+        cursor:pointer;
+    }
+    .ui-slider .ui-slider-range {
+        background: var(--rangeBgRange-);   
+        outline: 1px solid var(--rangeBgRange-);     
+        height:100%;
+    }
+}

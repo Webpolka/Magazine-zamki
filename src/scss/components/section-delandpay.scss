@@ -1,0 +1,116 @@
+.section-delandpay {
+    padding-bottom: rem(40);  
+
+    .title-4 {
+        padding-top: rem(30);
+        padding-bottom: rem(30);
+        text-align: left;
+    }
+    p{
+        font-size: rem(14);
+        line-height: rem(24);
+        font-weight: 400;
+        padding-bottom: 1rem;
+        color: var(--color-grey);
+    }
+}
+.section-delivery__grid{
+    .ibg {
+        min-height: rem(215);
+        position: relative;
+
+        img {
+            object-fit: cover;
+        }
+
+        span {
+            display: block;
+            width: rem(123);
+            height: rem(53);            
+            position: absolute;
+            top: rem(-26);
+            right: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            &.del-1 {
+                background-image: url(../../images/pr-1.png);
+            }
+
+            &.del-2 {
+                background-image: url(../../images/pr-2.png);
+            }
+
+            &.del-3 {
+                background-image: url(../../images/pr-3.png);
+            }
+        }
+
+    }
+    b{
+        display: block;
+        font-size: rem(20);
+        line-height: rem(30);
+        font-weight: 500;
+        color: var(--color-black);
+        border-left: 2px var(--color-main) solid;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .line-start {
+        margin-bottom: 1rem;
+
+        i {
+            flex-shrink: 0;
+            align-self: start;
+            margin-right: 0.8rem;
+            margin-top: rem(1);
+        }
+
+        span {
+            font-size: rem(13.5);
+            line-height: rem(20);
+            font-weight: 400;
+            color: var(--color-grey);
+        }
+    }
+    @include mobile {
+        .ingrid-3{
+            width: 100%;
+        }
+    }
+}
+
+.section-payment__grid{
+    .line-start{
+        margin-bottom: 1rem;
+    }
+    b{
+        display: inline-block;
+        font-size: rem(20);
+        line-height: rem(30);
+        font-weight: 600;
+        margin-left: 1rem;       
+    }   
+}
+.section-garant__grid,
+.section-return__grid{
+    a{
+        font-size: rem(14);
+        line-height: rem(24);
+        font-weight: 400;
+        text-decoration: underline;
+        color: var(--color-main);
+        &:hover{text-decoration: none;}
+    }
+   b{
+    display: block;
+    font-size: rem(16);
+    line-height: rem(26);
+    font-weight: 500;
+    color: var(--color-black);  
+    margin-bottom: 1rem;   
+   }
+}

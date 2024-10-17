@@ -1,0 +1,222 @@
+
+a{	
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--color-link);	
+	font-family: var(--font-main);
+}
+// ++
+.title-1 {
+	margin-bottom: rem(25);
+	font-size: rem(44);
+	font-weight: 600;
+	line-height: rem(62);
+	font-family: var(--font-main);
+	color: var(--color-black);
+	text-align: center;
+
+@include phone {
+	font-size: rem(35);
+	font-weight: 600;
+	line-height: rem(45);
+	margin-bottom: rem(15);
+}
+}
+// ++
+.title-2 {	
+	font-size: rem(28);
+	line-height: rem(42);
+	font-weight: 600;
+	color: var(--color-black);
+	font-family: var(--font-main);
+}
+// ++
+.title-3 {	
+	font-size: rem(22);
+	line-height: rem(32);
+	font-weight: 600;
+	color: var(--color-black);
+	font-family: var(--font-main);
+}
+//++
+.title-4 {
+	font-size: rem(32);
+	line-height: rem(42);
+	font-weight: 700;
+	color: var(--color-black);
+	font-family: var(--font-main);
+}
+.title-main-color{
+	font-size: rem(18);
+	line-height: rem(38);
+	font-weight: 400;
+	color: var(--color-main);
+	font-family: var(--font-accent);
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+//----------------- icons ---------------------
+
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	min-width: 1rem;
+	min-height: 1rem;
+}
+.icon--logo-header{
+	width: rem(50);
+	height: rem(42);
+}
+.icon--phone-blue{
+	width: rem(19);
+	height: rem(19);
+}
+.icon--like{
+	width: rem(23);
+	height: rem(21);
+}
+.icon--cart{
+	width: rem(32);
+	height: rem(32);
+}
+.icon--vk{
+	width: rem(26);
+	height: rem(16);
+}
+.icon--twitter{
+	width: rem(25);
+	height: rem(20);
+}
+.icon--facebook{
+	width: rem(13);
+	height: rem(26);
+}
+.icon--why-gold-1,
+.icon--why-gold-2,
+.icon--why-gold-3{
+	width: rem(82);
+	height: rem(82);
+}
+.icon--answer{
+	width: rem(12);
+	height: rem(12);
+}
+.icon--comment{
+	width: rem(14);
+	height: rem(14);
+}
+.icon--show-yet{
+	width: rem(20);
+	height: rem(20);
+}
+.icon--trash{
+	width: rem(24);
+	height: rem(24);
+}
+.icon--plus{
+	width: rem(18);
+	height: rem(18);
+}
+.icon--edit{
+	width: rem(14);
+	height: rem(14);
+}
+.icon--radisson{
+	width: rem(165);
+	height: rem(40);
+}
+.icon--credit{
+	width: rem(24);
+	height: rem(24);
+}
+.icon--frame{
+	width: rem(24);
+	height: rem(24);
+}
+.icon--group{
+	width: rem(32);
+	height: rem(28);
+}
+.yes{
+	display: inline-block;
+	width: rem(20);
+	height: rem(20);
+	background-color: #fff;
+	background-image: url(../../icons/green-yes.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	margin-right: 0.5rem;
+}
+.no{
+	display: inline-block;
+	width: rem(20);
+	height: rem(20);
+	background-color: #fff;
+	background-image: url(../../icons/red-no.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	margin-right: 0.5rem;
+}
+i.gift{
+	display: block;
+	width: rem(12);
+	height: rem(12);
+	background-image: url(../../icons/gift.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-right: 0.5rem;
+}
+i.left{
+	display: block;
+	width: rem(14);
+	height: rem(14);
+	background-image: url(../../icons/left.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-right: 0.5rem;
+}
+i.right{
+	display: inline-block;
+	width: rem(14);
+	height: rem(14);
+	background-image: url(../../icons/right.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-right: 0.5rem;
+}
+.star-pull{
+	display: inline-block;
+	width: rem(17);
+	height: rem(17);
+	background-image: url(../../icons/star-pull.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;	
+}
+.star-empty{
+	display: inline-block;
+	width: rem(17);
+	height: rem(17);
+	background-image: url(../../icons/star-empty.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	
+}
+.checkbox-doll{
+	display: inline-block;
+	width: rem(18);
+	height: rem(18);
+	background-color: var(--color-main);
+	background-image: url(../../icons/white-yes.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
+}

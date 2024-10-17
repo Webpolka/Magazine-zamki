@@ -1,0 +1,160 @@
+.section-catalog {
+    padding-top: rem(40);
+    padding-bottom: rem(60);
+
+    &__title {
+        display: inline-flex;
+        align-items: end;
+        margin-bottom: rem(35);
+
+        .title-2 {
+            line-height: rem(33);
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        span {
+            display: block;
+            font-size: rem(18);
+            font-weight: 300;
+            line-height: rem(28);
+            color: var(--color-black);
+            margin-left: 1rem;
+        }
+    }
+
+    &__grid {
+        padding-bottom: rem(30);
+    }
+
+    &__filter {
+        width: 25%;
+        height: 100%;
+        padding-left: rem($main-offset);
+        padding-right: rem($main-offset);
+    }
+
+    &__content {
+        width: 75%;
+        height: 100%;
+        padding-left: rem($main-offset);
+        padding-right: rem($main-offset);
+    }
+
+    // ---------------------------------------------------- Filter --------------------------------------------------------------
+    &__filter {
+        .btn-transparent {
+            width: 100%;
+            margin-bottom: rem(30);
+        }
+
+        .filter {
+            padding: rem(25);
+            border: 1px solid var(--color-box);
+
+            .title-3 {
+                margin-bottom: rem(25);
+            }
+
+            &-item__row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                b,
+                span {
+                    display: block;
+                    font-size: rem(16);
+                    line-height: rem(26);
+                    font-weight: 500;
+                    color: var(--color-black);
+                }
+            }
+
+            &-item__box {
+                width: 90%;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid var(--color-box);
+            }
+        }
+
+        .btn-main {
+            margin-top: rem(25);
+            width: 100%;
+        }
+    }
+
+    // ---------------------------------------------------- Content --------------------------------------------------------------
+
+    .section-catalog__content {
+        .filter-content__buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: rem(30);
+
+            select {
+                cursor: pointer;
+                display: block;
+                min-height: rem(40);
+                display: inline-block;
+                border: 1px solid var(--color-box);
+                padding: rem(12) rem(16);
+                font-size: rem(16);
+                font-weight: 400;
+                line-height: rem(26);
+                color: var(--color-black);
+            }
+
+            .filter-remove {
+                display: inline-flex;
+                align-items: center;
+
+                button {
+                    display: block;
+                    cursor: pointer;
+                    margin-left: 0.5rem;
+                }
+            }
+            @media (max-width:450px){
+                .filter-remove{
+                    display: none;
+                }
+                select{
+                    width: 100%;
+                }
+            }         
+
+        }
+
+        .ingrid-3 {
+            margin-bottom: rem(30);
+        }
+    }
+
+    @include mobile {
+        .filter-content__buttons{
+            margin-top: 1.5rem;
+        }
+        &__filter {
+            width: 100%;
+        }
+
+        &__content {
+            width: 100%;
+
+            .ingrid-3 {
+                width: 50%;
+            }
+        }
+
+    }
+    @include phone {               
+        .ingrid-3 {
+            width: 100%;
+        }
+    }
+}
